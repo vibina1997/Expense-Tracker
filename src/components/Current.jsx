@@ -45,7 +45,7 @@ const Current = () => {
       </div>
 
       <div className="d-flex justify-content-center align-items-center flex-column">
-        <div className={curre.cardcontainer}>
+        <div className={curret.cardcontainer}>
           {cards.map((item) => (
             <div key={item.id} className={curret .card}>
               <h4 className={curret.cardtitle}>{item.title}</h4>
