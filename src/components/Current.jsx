@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import curre from "../Assets/Current.module.css";
+import curret from "../Assets/Current.module.css";
 
 
 
@@ -35,29 +35,29 @@ const Current = () => {
 
   return (
     <div className="container col-6 pt-4">
-      <div className={curre.container}>
-        <h3 className={curre.title}>Current Budget in each category</h3>
+      <div className={curret.container}>
+        <h3 className={curret.title}>Current Budget in each category</h3>
         <input
           type="text"
           placeholder="Search"
-          className={curre.searchInput}
+          className={curret.searchInput}
         />
       </div>
 
       <div className="d-flex justify-content-center align-items-center flex-column">
         <div className={curre.cardcontainer}>
           {cards.map((item) => (
-            <div key={item.id} className={curre.card}>
-              <h4 className={curre.cardtitle}>{item.title}</h4>
-              <span className={curre.amount}>₹{item.amount}</span>
-              <span className={curre.smallspan}>Spent this month</span>
+            <div key={item.id} className={curret .card}>
+              <h4 className={curret.cardtitle}>{item.title}</h4>
+              <span className={curret.amount}>₹{item.amount}</span>
+              <span className={curret.smallspan}>Spent this month</span>
               <button onClick={() => handledelete(item.id)} type="button">Delete</button>
             </div>
           ))}
         </div>
       </div>
 
-      <form onSubmit={handleSubmit} className={curre.formcontainer}>
+      <form onSubmit={handleSubmit} className={curret.formcontainer}>
         
         <button className="btn addbtn mb-2" type="submit">
           Add New Class
