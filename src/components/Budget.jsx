@@ -1,5 +1,5 @@
 import React from 'react'
-import buge from '../Assets/Budget.module.css'
+import buge from '../assets/Budget.module.css'
 const carddata=[
   {
     id:1,

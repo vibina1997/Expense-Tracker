@@ -1,6 +1,6 @@
 
 import React from "react";
-import main from '../Assets/Sidebar.module.css'
+import main from '../assets/Sidebar.module.css'
 
 const Sidebar = ({ open }) => {
   return (

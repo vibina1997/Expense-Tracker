@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import curret from "../Assets/Current.module.css";
+import curret from "../assets/Current.module.css";
 
 
 
