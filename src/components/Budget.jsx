@@ -1,5 +1,5 @@
 import React from 'react'
-import style from '../assets/Budget.module.css'
+import style from '../Assets/Budget.module.css'
 const carddata=[
   {
     id:1,

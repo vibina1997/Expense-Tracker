@@ -1,6 +1,6 @@
 
 import React from "react";
-import styles from '../assets/Sidebar.module.css'
+import styles from '../Assets/Sidebar.module.css'
 
 const Sidebar = ({ open }) => {
   return (
