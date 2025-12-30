@@ -1,0 +1,36 @@
+.nav{
+    width: 300px;
+    background-color: #1f5895;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, sans-serif;
+    
+    
+   
+
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+     background-color: #fafbfc;
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+    gap: 10px;
+    color: black;
+    margin-bottom: 20px;
+    border-radius: 10px;
+
+}
+.active{
+   
+font-size: medium;
+    font-size: 12px;
+    font-weight: bold;
+
+
+}
+
