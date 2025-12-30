@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "../Assets/Current.module.css";
+import style from "../Assets/Current.module.css";
 
 
 
@@ -35,29 +35,29 @@ const Current = () => {
 
   return (
     <div className="container col-6 pt-4">
-      <div className={styles.container}>
-        <h3 className={styles.title}>Current Budget in each category</h3>
+      <div className={style.container}>
+        <h3 className={style.title}>Current Budget in each category</h3>
         <input
           type="text"
           placeholder="Search"
-          className={styles.searchInput}
+          className={style.searchInput}
         />
       </div>
 
       <div className="d-flex justify-content-center align-items-center flex-column">
-        <div className={styles.cardcontainer}>
+        <div className={style.cardcontainer}>
           {cards.map((item) => (
-            <div key={item.id} className={styles.card}>
-              <h4 className={styles.cardtitle}>{item.title}</h4>
-              <span className={styles.amount}>₹{item.amount}</span>
-              <span className={styles.smallspan}>Spent this month</span>
+            <div key={item.id} className={style.card}>
+              <h4 className={style.cardtitle}>{item.title}</h4>
+              <span className={style.amount}>₹{item.amount}</span>
+              <span className={style.smallspan}>Spent this month</span>
               <button onClick={() => handledelete(item.id)} type="button">Delete</button>
             </div>
           ))}
         </div>
       </div>
 
-      <form onSubmit={handleSubmit} className={styles.formcontainer}>
+      <form onSubmit={handleSubmit} className={style.formcontainer}>
         
         <button className="btn addbtn mb-2" type="submit">
           Add New Class
