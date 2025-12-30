@@ -1,5 +1,5 @@
 import React from 'react'
-import styl from '../Assets/Budget.module.css'
+import buge from '../Assets/Budget.module.css'
 const carddata=[
   {
     id:1,
@@ -24,16 +24,16 @@ const Budget = () => {
   return (
     
     <div className='container d-flex justify-content-center align-items-center flex-column col-6  mt-5'> 
-    <div className={styl.budgetmaincontainer}>'
+    <div className={buge.budgetmaincontainer}>'
 
 
-      <h2 className={styl.title}>Welcome to Advanced Budget and Expense Tracker System -PHP</h2>
-      <div className={styl.cardcontainer}>
+      <h2 className={buge.title}>Welcome to Advanced Budget and Expense Tracker System -PHP</h2>
+      <div className={buge.cardcontainer}>
        {carddata.map((data) => (
-        <div key={data.id} className={styl.budgetcontainer}>
+        <div key={data.id} className={buge.budgetcontainer}>
           
-          <h3 className={styl.cardtitle}>{data.title}</h3>
-          <p className={styl.cardamount}>{data.amount}</p>
+          <h3 className={buge.cardtitle}>{data.title}</h3>
+          <p className={buge.cardamount}>{data.amount}</p>
         </div>
         
       ))}
