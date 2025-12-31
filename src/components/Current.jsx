@@ -1,8 +1,5 @@
-import React, { useState } from "react";import style from "../assets/Current.module.css";
+import React, { useState } from "react";
 import style from "../assets/Current.module.css";
-
-
-
 
 const Current = () => {
   const [title, setTitle] = useState("");
@@ -10,15 +7,14 @@ const Current = () => {
   const [cards, setCards] = useState([
     { id: 1, title: "electricity", amount: 5000 },
     { id: 2, title: "grocery", amount: 8000 },
-  
   ]);
- const handledelete = (id) => {
-    const filteredCards = cards.filter((card) => card.id !== id);
-    setCards(filteredCards);
+
+  const handleDelete = (id) => {
+    setCards(cards.filter((card) => card.id !== id));
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-
     if (!title || !amount) return;
 
     setCards([
@@ -52,14 +48,15 @@ const Current = () => {
               <h4 className={style.cardtitle}>{item.title}</h4>
               <span className={style.amount}>₹{item.amount}</span>
               <span className={style.smallspan}>Spent this month</span>
-              <button onClick={() => handledelete(item.id)} type="button">Delete</button>
+              <button onClick={() => handleDelete(item.id)}>
+                Delete
+              </button>
             </div>
           ))}
         </div>
       </div>
 
       <form onSubmit={handleSubmit} className={style.formcontainer}>
-        
         <button className="btn addbtn mb-2" type="submit">
           Add New Class
         </button>
@@ -78,10 +75,7 @@ const Current = () => {
           onChange={(e) => setAmount(e.target.value)}
         />
       </form>
-        </div>
-    
-      
-
+    </div>
   );
 };
 
