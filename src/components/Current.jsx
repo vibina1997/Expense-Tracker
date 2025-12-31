@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import style from "../assets/Current.module.css";
-
+import style from "../assets/current.module.css";
 const Current = () => {
   const [title, setTitle] = useState("");
   const [amount, setAmount] = useState("");
